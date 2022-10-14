@@ -1,31 +1,106 @@
+import root from "../../Assists/root.jpg"
+import BlackWidow from '../../Assists/BlackWidow.jpg'
+import CaptainAmerica from '../../Assists/CaptainAmerica.jpg'
+import DoctorStrang from '../../Assists/DoctorStrang.jpg'
+import GostRider from '../../Assists/GostRider.jpg'
+import IronMan from '../../Assists/IronMan.jpg'
+import Loki from '../../Assists/Loki.jpg'
+import MoonKnight from '../../Assists/MoonKnight.jpg'
+import Thenos from '../../Assists/Thenos.jpg'
+import Vison from '../../Assists/Vison.jpg'
+import Wanda from '../../Assists/Wanda.jpg'
+
+
+
+import Thor from '../../Assists/Thor.jpg'
+import Hulk from '../../Assists/Hulk.jpg'
+import CaptainMarvel from '../../Assists/CaptainMarvel.jpg'
+import DareDevil from '../../Assists/DareDevil.jpg'
+import marvel from '../../Assists/marvel.jpg'
+import ShankChee from '../../Assists/Shank-Chee.jpg'
+import Venom from '../../Assists/Venom.jpg'
+import Falcan from '../../Assists/Falcan.jpg'
+
 export const Name = [
     {
-      code: "TREE",
-      img:"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+      code: "ROOT",
+img:root
     },
     {
-      code: "EYE",
-      img:"https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+      code: "BLACK WIDOW",
+      img:BlackWidow
 
     },
     {
-      code: "CAMERA",
-      img:"https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80"
+      code: "CAPTAIN AMERICA",
+      img:CaptainAmerica
     },
   
     {
-      code: "MOON",
-      img:"https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000"
+      code: "MOONKNIGHT",
+      img:MoonKnight
     },
     {
-      code: "RIVER",
-      img:"https://static.photocdn.pt/images/articles/2019/02/07/Simple_Landscape_Photography_Tips_With_Tons_of_Impact-2.jpg"
+      code: "DOCTOR STRANG",
+      img:DoctorStrang
     },
     {
-      code: "PLANET",
-      img:"https://media.istockphoto.com/photos/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-picture-id1181366400?k=20&m=1181366400&s=612x612&w=0&h=p-iaAHKhxsF6Wqrs7QjbwjOYAFBrJYhxlLLXEX1wsGs="
+      code: "GOST RIDER",
+      img:GostRider
     },
-
+    {
+      code: "IRON-MAN",
+      img:IronMan
+    },
+    {
+      code: "LOKI",
+      img:Loki
+    },
+    {
+      code: "THENOS",
+      img:Thenos
+    },
+    {
+      code: "VISON",
+      img:Vison
+    },
+    {
+      code: "WANDA",
+      img:Wanda
+    },
+  
+    {
+      code: "Thor",
+      img:Thor
+    },
+    {
+      code: " Hulk",
+      img:Hulk
+    },
+    {
+      code: "CaptainMarvel",
+      img:CaptainMarvel
+    },
+    {
+      code: "DareDevil",
+      img:DareDevil
+    },
+    {
+      code: "Marvel",
+      img:marvel
+    },
+    {
+      code: "SHANG_CHEE",
+      img:ShankChee
+    },
+    {
+      code: "Venom",
+      img:Venom
+    },
+    {
+      code: "Falcan",
+      img:Falcan
+    },
   ];
   
   

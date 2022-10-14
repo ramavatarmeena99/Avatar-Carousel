@@ -1,7 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from "react";
-
 import Slider from "react-slick";
 import { Name } from "../Data";
 
@@ -104,7 +103,7 @@ export default function MainContainer() {
       </div>
       <Slider
         style={{
-          width: "85%",
+          width: "90%",
           height: "auto",
           display: "flex",
           flexDirection: "row",
@@ -121,8 +120,12 @@ export default function MainContainer() {
               <p style={{ color: "red" }}>{i.code}</p>
               <div
                 style={{
+                  width: "410px",
+                  height: "auto",
                   border: "1px solid red",
                   margin: "5px",
+
+
                   borderRadius: "5px",
                 }}
               >
@@ -130,11 +133,11 @@ export default function MainContainer() {
                   style={{
                     width: "100%",
                     height: "300px",
-                    objectFit: "cover",
-                    borderRadius: "5px",
+                    objectFit: "contain",
+
                     // border: "1px solid red",
                   }}
-                  src={i.img}
+                  src={i?.img}
                   alt="React Slick"
                 ></img>
               </div>
