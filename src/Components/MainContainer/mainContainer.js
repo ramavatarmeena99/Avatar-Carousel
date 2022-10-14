@@ -110,7 +110,7 @@ export default function MainContainer() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
-          padding: "10px",
+          padding: "5px",
         }}
         ref={slider}
         {...settings}
@@ -119,17 +119,25 @@ export default function MainContainer() {
           return (
             <div key={index}>
               <p style={{ color: "red" }}>{i.code}</p>
-              <img
+              <div
                 style={{
-                  width: "100%",
-                  height: "300px",
-                  objectFit: "cover",
-                  padding: "5px",
-                  // border: "1px solid red",
+                  border: "1px solid red",
+                  margin: "5px",
+                  borderRadius: "5px",
                 }}
-                src={i.img}
-                alt="React Slick"
-              ></img>
+              >
+                <img
+                  style={{
+                    width: "100%",
+                    height: "300px",
+                    objectFit: "cover",
+                    borderRadius: "5px",
+                    // border: "1px solid red",
+                  }}
+                  src={i.img}
+                  alt="React Slick"
+                ></img>
+              </div>
             </div>
           );
         })}
