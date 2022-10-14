@@ -71,15 +71,15 @@ export default function mainContainer() {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
-                
               }}
               key={index}
             >
               <p>{i.code}</p>
-              <img style={{width:"100%",height:"300px", 
-    objectFit: "cover",
-            
-            }} src={i.img}></img>
+              <img
+                style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                src={i.img}
+                alt="React Slick"
+              ></img>
             </div>
           );
         })}
