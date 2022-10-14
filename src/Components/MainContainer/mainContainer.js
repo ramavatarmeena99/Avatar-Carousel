@@ -1,6 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 
 import Slider from "react-slick";
 import { Name } from "../Data";
@@ -31,9 +31,8 @@ function SamplePrevArrow(props) {
   );
 }
 
-
 export default function MainContainer() {
-const slider = useRef(null)
+  const slider = useRef(null);
 
   const settings = {
     dots: true,
@@ -41,7 +40,7 @@ const slider = useRef(null)
     speed: 500,
     arrows: false,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     row: 2,
     responsive: [
       {
@@ -76,18 +75,28 @@ const slider = useRef(null)
     <div
       style={{
         width: "100%",
-        height: "60vh",
-        backgroundColor: "green",
+        height: "90vh",
+
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-            <div style={{ margin: 20 }}>
-        <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+      <div style={{ margin: 20 }}>
         <button
-          style={{ marginLeft: 20 }}
+          style={{ width: "70px", height: "30px", cursor: "pointer" }}
+          onClick={() => slider?.current?.slickPrev()}
+        >
+          Prev
+        </button>
+        <button
+          style={{
+            marginLeft: 20,
+            width: "70px",
+            height: "30px",
+            cursor: "pointer",
+          }}
           onClick={() => slider?.current?.slickNext()}
         >
           Next
@@ -101,19 +110,23 @@ const slider = useRef(null)
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
-          padding:"10px"
+          padding: "10px",
         }}
         ref={slider}
         {...settings}
       >
         {Name.map((i, index) => {
           return (
-            <div
-              key={index}
-            >
-              <p>{i.code}</p>
+            <div key={index}>
+              <p style={{ color: "red" }}>{i.code}</p>
               <img
-                style={{ width: "100%", height: "300px", objectFit: "cover",padding:"5px"}}
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  objectFit: "cover",
+                  padding: "5px",
+                  // border: "1px solid red",
+                }}
                 src={i.img}
                 alt="React Slick"
               ></img>
