@@ -1,14 +1,45 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+import React, {useRef} from "react";
+
 import Slider from "react-slick";
 import { Name } from "../Data";
 
-export default function mainContainer() {
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    >
+      NEXT
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    >
+      BACK
+    </div>
+  );
+}
+
+
+export default function MainContainer() {
+const slider = useRef(null)
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     row: 2,
@@ -38,6 +69,8 @@ export default function mainContainer() {
         },
       },
     ],
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div
@@ -46,37 +79,41 @@ export default function mainContainer() {
         height: "60vh",
         backgroundColor: "green",
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
+            <div style={{ margin: 20 }}>
+        <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+        <button
+          style={{ marginLeft: 20 }}
+          onClick={() => slider?.current?.slickNext()}
+        >
+          Next
+        </button>
+      </div>
       <Slider
         style={{
           width: "85%",
           height: "auto",
-          backgroundColor: "red",
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
+          padding:"10px"
         }}
+        ref={slider}
         {...settings}
       >
         {Name.map((i, index) => {
           return (
             <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
               key={index}
             >
               <p>{i.code}</p>
               <img
-                style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                style={{ width: "100%", height: "300px", objectFit: "cover",padding:"5px"}}
                 src={i.img}
                 alt="React Slick"
               ></img>
