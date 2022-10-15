@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { Name } from "../Data";
+import "./index.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -75,7 +76,6 @@ export default function MainContainer() {
       style={{
         width: "100%",
         height: "90vh",
-
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -98,7 +98,7 @@ export default function MainContainer() {
           }}
           onClick={() => slider?.current?.slickNext()}
         >
-          Next
+         Next
         </button>
       </div>
       <Slider

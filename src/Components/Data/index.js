@@ -21,6 +21,16 @@ import ShankChee from '../../Assists/Shank-Chee.jpg'
 import Venom from '../../Assists/Venom.jpg'
 import Falcan from '../../Assists/Falcan.jpg'
 
+
+import StarLord from '../../Assists/StarLord.jpeg'
+import WinterSoldier from '../../Assists/WinterSoldier.jpeg'
+import Wolverine from '../../Assists/Wolverine.jpeg'
+import Hela from '../../Assists/Hela.jpeg'
+import Hawakeye from '../../Assists/Hawakeye.jpeg'
+import Gamora from '../../Assists/Gamora.jpeg'
+import EndGame from '../../Assists/EndGame.jpeg'
+
+
 export const Name = [
     {
       code: "ROOT",
@@ -100,6 +110,37 @@ img:root
     {
       code: "Falcan",
       img:Falcan
+    },
+
+
+
+    {
+      code: "Star Lord",
+      img:StarLord
+    },
+    {
+      code: "Winter Soldier",
+      img:WinterSoldier
+    },
+    {
+      code: "Wolverine",
+      img:Wolverine
+    },
+    {
+      code: "Hela",
+      img:Hela
+    },
+    {
+      code: "Hawakeye",
+      img:Hawakeye
+    },
+    {
+      code: "Gamora",
+      img:Gamora
+    },
+    {
+      code: "Avengers",
+      img:EndGame
     },
   ];
   
