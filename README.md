@@ -25,7 +25,7 @@
     ```
 2. Change the directory 
     ```
-    cd avatar-pexels-image
+    cd avatar-carousel
     ```
 3. Install
     ```
