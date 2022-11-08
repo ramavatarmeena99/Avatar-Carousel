@@ -1,4 +1,4 @@
-![](https://github.com/ramavatarmeena99/Avatar-Pexel-gallery/blob/main/src/Component/Assest/AvatarPexels.png?raw=true)
+![](https://github.com/ramavatarmeena99/Avatar-Carousel/blob/main/src/Assists/AvatarCarousel.png?raw=true)
 
 ## About Project
 
