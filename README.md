@@ -1,18 +1,18 @@
 ![](https://github.com/ramavatarmeena99/Avatar-Carousel/blob/main/src/Assists/AvatarCarousel.png?raw=true)
 
-## About Project
+<!-- ## About Project -->
 
 
-## Features
-* Search Image
-* Pagination Add
+<!-- ## Features
+*  
+*  -->
 
 ## Technology Stack Used In This Project
 * ReactJs
 * JavaScript
 * Styled Components
 * HTML/CSS
-* API
+* React-slick 
 
 ## Project Live
 ### [Click here](https://avatarcarousel.netlify.app/) 
